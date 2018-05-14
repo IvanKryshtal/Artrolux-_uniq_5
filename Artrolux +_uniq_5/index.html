@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Artrolux</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/@media.css"> 
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-3 slogan">
+						<img src="img/slogan.png" alt="">
+					</div>
+					<div class="col-sm-6 nav">
+						<ul class="menu">
+							<li class="menu_item">
+								<a href="#expert">Мнение эксперта</a>
+							</li>
+							<li class="menu_item">
+								<a href="#composition">Состав</a>
+							</li>
+							<li class="menu_item">
+								<a href="#reviews">Отзывы</a>
+							</li>
+							<li class="menu_item">
+								<a href="#delivery">Доставка</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-3 button_holder">
+						<a href="#order" class="button btn_header">ЗАКАЗАТЬ</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="order">
+				<div id="order"></div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-7 col-sm-6 col-12 product_img">
+							<img src="img/tovar_top.png" alt="">
+							<img class="for_768" src="img/tovar768.png" alt="">
+						</div>
+						<div class="col-lg-5 col-sm-6 col-12 order_contant">
+							<h1 class="h1">Artrolux +</h1>
+							<span class="h2">
+								Восстановление суставов  Первое средство с пудрой жемчуга 
+							</span>
+							<div class="order_item">
+								<div class="sale">
+									<div class="sale_text">
+										<span>Скидка -50 %</span>
+										<span class="finish">заканчивается  через</span>
+									</div>
+									<div class="countdown-container"></div>
+								</div>
+								<div class="price">
+									<div class="old_price">
+										<span class="wv_old-price">78</span>
+										<span class="wv_currency">&euro;</span>
+									</div>
+									<div class="new_price">
+										<span class="wv_new-price">39</span>
+										<span class="wv_currency">&euro;</span>
+									</div>
+								</div>
+								<form action="order.php" method="POST" class="wv_order-form">
+									<span>Страна</span>
+									<div class="select_holder">
+										<select id="id_country" name="id_country" class="country_select">
+											<option value="at">Austria</option>
+											<option value="it">Italy</option>
+											<option value="es">Spain</option>
+											<option value="fr">France</option>
+											<option value="lv">Latvia</option>
+											<option value="ee">Estonia</option>
+											<option value="lt">Lithuania</option>
+											<option value="de">Germany</option>
+											<option value="pl">Poland</option>
+											<option value="hu">Hungary</option>
+											<option value="bg">Bulgaria</option>
+										</select> 
+									</div>
+									<span>Имя</span>
+									<input name="name" type="text" class="wv_name" required>
+									<span>Телефон</span>
+									<input name="phone" type="text" class="wv_phone" required>
+									<input name="ym" type="hidden" class="" value="default">
+									<input name="utm_source" type="hidden" class="">
+									<input name="utm_medium" type="hidden" class="">
+									<input name="utm_campaign" type="hidden" class="">
+									<input name="utm_content" type="hidden" class="">
+									<input name="utm_term" type="hidden" class="">
+									<input name="referer" type="hidden" class="" value="default">
+									<input name="guid" type="hidden" class="">
+									<input name="first_guid" type="hidden" class="">
+									<input name="landing_id" type="hidden" class="">
+									<input name="prelanding_id" type="hidden" class="">
+									<input name="offer_id" type="hidden" class="">
+									<input name="url" type="hidden" class="">
+									<button class="button form_btn">ЗАКАЗАТЬ</button>
+									<span class="police">
+										Осталось N упаковок <img src="img/shild_icon.png" alt="">
+										<img class="for_320" src="img/shild_icon_w.png" alt="">Ваши данные под защитой
+									</span>
+								</form>
+							</div>
+						</div>
+						<div class="short_inf col-12">
+							<div class="row">
+								<div class="col-sm-4 col-12 short_inf_item short_inf_item1">
+									<img src="img/short_info1.png" alt="">
+									<span>Избавляет от боли и отеков в суставах</span>
+								</div>
+								<div class="col-sm-4 col-12 short_inf_item short_inf_item2">
+									<img src="img/short_info2.png" alt="">
+									<span>Восстанавливает двигательную активность</span>
+								</div>
+								<div class="col-sm-4 col-12 short_inf_item short_inf_item3">
+									<img src="img/short_info3.png" alt="">
+									<span>Укрепляет суставы, кости и мышцы</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="secret">
+				<div class="container-fluid">
+					<div class="row">
+						<span class="h3 col-12">В чем секрет Artrolux+?</span>
+						<div class="col-lg-5 col-12 secret_img">
+							<img src="img/secret_img.png" alt="">
+							<img src="img/secret_img_768.png" alt="" class="for_768">
+						</div>
+						<div class="col-lg-7 col-12 secret_text">
+							<p>
+								Основным ингредиентом средства Artrolux + является пудра жемчуга. Пудра жемчуга — это уникальный 
+								источник кальция, усвояемость которого в организме более 60%. Именно дефицит кальция является главной 
+								причиной разрушения суставов.
+							</p>
+							<p>
+								Пудра жемчуга производится из жемчуга, разводимого по специальным технологиям в экологически чистых 
+								условиях. В состав пудры жемчуга входит 18 аминокислот и 20 полезных микроэлементов, необходимых для 
+								синтеза коллагена, который восстанавливает гибкость суставов.
+							</p>
+						</div>
+						<div class="col-sm-4 col-12 secret_item secret_item1">
+							<img src="img/secret_icon1.png" alt="">
+							<span>Более 60%  кальция</span>
+						</div>
+						<div class="col-sm-4 col-12 secret_item secret_item2">
+							<img src="img/secret_icon2.png" alt="">
+							<span>20 Полезных  микроэлементов</span>
+						</div>
+						<div class="col-sm-4 col-12 secret_item secret_item3">
+							<img src="img/secret_icon3.png" alt="">
+							<span>18 Органических  аминокислот</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="expert">
+				<div id="expert"></div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-7 col-sm-6 col-12 expert_text">
+							<span class="h3">Мнение эксперта</span>
+							<span class="h4">“Artrolux + восстанавливает суставы благодаря уникальному составу”</span>
+							<p>
+								“Сегодня появилось инновационное средство Artrolux +. Оно не просто снимает боль, а останавливает 
+								разрушение суставов и запускает процесс регенерации хрящевой ткани. В состав средства входит самый 
+								мощный природный источник кальция — пудра жемчуга. В соединении с хондроитином, глюкозамином и другими 
+								биоактивными компонентами пудра жемчуга восстанавливает двигательную активность и затормаживает развитие 
+								артрита и артроза”. 
+							</p>
+							<span class="name">Луис Дельгадо</span>
+							<span class="skill">Эксперт</span>
+						</div>
+						<div class="col-lg-5 col-sm-6 col-12 expert_photo">
+							<img src="img/doc.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="info">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-4 col-sm-5 col-12 info_item1">
+							<span class="h3">Artrolux +</span>
+							<span>Эффективная комбинация  биокомпонентов </span>
+						</div>
+						<div class="col-lg-8 col-sm-7 col-12 info_item2">
+							<p>
+								Artrolux + — натуральный комплекс веществ для восстановления суставов. Средство оказывает 
+								восстановительное действие на хрящевую ткань суставов, способствуют укреплению суставов, 
+								стимулирует синтез коллагена, снижает потерю кальция, увеличивает подвижность суставов. 
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="composition">
+				<div id="composition"></div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-3 col-sm-6 col-12 compoition_item compoition_item1">
+							<img src="img/composition1.png" alt="">
+							<spna class="name">Пудра жемчуга</spna>
+							<span class="text">Укрепляет суставы, кости и мышцы</span>
+						</div>
+						<div class="col-lg-3 col-sm-6 col-12 compoition_item compoition_item2">
+							<img src="img/composition2.png" alt="">
+							<spna class="name">Босвеллии экстракт</spna>
+							<span class="text">Обладает выраженным противовоспалительным действием</span>
+						</div>
+						<div class="col-lg-3 col-sm-6 col-12 compoition_item compoition_item3">
+							<img src="img/composition3.png" alt="">
+							<spna class="name">Глюкозамин</spna>
+							<span class="text">Способствует регенерации  поврежденных тканей </span>
+						</div>
+						<div class="col-lg-3 col-sm-6 col-12 compoition_item compoition_item4">
+							<img src="img/composition4.png" alt="">
+							<spna class="name">Хондроитин</spna>
+							<span class="text">Тормозит процессы разрушения хрящевой ткани</span>
+						</div>
+						<div class="col-lg-4 Europe col-sm-6 col-12">
+							<img src="img/composition_icon.png" alt="">
+							<span class="text text1">Не имеет  аналогов  в Европе</span>
+						</div>
+						<div class="col-lg-4 Europe col-sm-6 col-12">
+							<img src="img/composition_icon2.png" alt="">
+							<span class="text text2">Отвечает  стандартам  качества ЕС</span>
+						</div>
+						<div class="col-lg-4 col-12 btn_holder">
+							<a href="#order" class="button composition_btn">ЗАКАЗАТЬ</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="investments">
+				<div class="container-fluid">
+					<div class="row">
+						<span class="h3 col-12">
+							765 000 € вложено в разработку Artrolux +
+						</span>
+						<div class="investments_item investments_item1 col-sm-4 col-12">
+							<img src="img/investments_img1.png" alt="">
+							<span class="text">
+								Формула Artrolux + создавалась в течение 7 лет исследований с привлечением 
+								независимых фармацевтических лабораторий Франции.
+							</span>
+						</div>
+						<div class="investments_item investments_item2 col-sm-4 col-12">
+							<img src="img/investments_img2.png" alt="">
+							<span class="text">
+								Для производства средства создана лаборатория, отвечающая всем стандартам качества ЕС,
+								 использованы современные технологии и лучшие ингредиенты.
+							</span>
+						</div>
+						<div class="investments_item investments_item3 col-sm-4 col-12">
+							<img src="img/investments_img3.png" alt="">
+							<span class="text">
+								5 лет шла разработка программного обеспечения для подбора 
+								инновационной формулы на основе результатов тестов клиентов.
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="effect">
+				<div class="container-fluid">
+					<div class="row">
+						<span class="h3 col-12">
+							Эффективность Artrolux +<br>доказана клиническими испытаниями
+						</span>
+						<div class="col-sm-4">
+							<ul class="effect_list">
+								<li class="list_header">Результаты  исследований</li>
+								<li>Устранение боли и отеков</li>
+								<li>Восстановление  двигательной активности</li>
+								<li>Укрепление суставов,  костей и мышц</li>
+								<li>Наличие побочных  эффектов</li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<ul class="artrolux_effect">
+								<li class="name">
+									<div>
+										<span>Artrolux +</span>
+										<img src="img/effect_img1.png" alt="">
+									</div>
+								</li>
+								<li><span class="result">+</span></li>
+								<li><span class="result">+</span></li>
+								<li><span class="result">+</span></li>
+								<li><span class="result minus">-</span></li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<ul class="other_effect">
+								<li class="name">
+									<div>
+										<span>Другие средства</span>
+										<img src="img/effect_img2.png" alt="">
+									</div>
+								</li>
+								<li><span class="result">+</span></li>
+								<li><span class="result minus">-</span></li>
+								<li><span class="result minus">-</span></li>
+								<li><span class="result">+</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="reviews">
+				<div id="reviews"></div>
+				<div class="container-fluid">
+					<div class="row">
+						<span class="h3 col-12">Artrolux + уже помог этим людям</span>
+						<div class="col-12 reviews_item">
+							<img src="img/review1.png" alt="">
+							<div class="review_text">
+								<span class="name">Амели, 48 лет</span>
+								<span class="review_item_text">
+									У меня артрит уже несколько лет. Очень болели руки. Пробовала разные кремы. Но от них только
+									охлаждающий эффект. А боль не проходила. Знакомый врач мне посоветовал Artrolux +. Пользуюсь 
+									средством неделю. Боли уже почти не чувствую.
+								</span>
+							</div>
+						</div>
+						<div class="col-12 reviews_item">
+							<img src="img/review2.png" alt="">
+							<div class="review_text">
+								<span class="name">Анна, 53 года</span>
+								<span class="review_item_text">
+									Я вывихнула плечевой сустав. И после этого мне стало тяжело двигать рукой. И периодически
+									я испытывала сильную боль. Кололи обезболивающее. Ну я плохо переношу большинство химических
+								  препаратов. В интернете нашла Artrolux +. Прошла курсовой прием. Теперь все в порядке.
+								</span>
+							</div>
+						</div>
+						<div class="col-12 reviews_item">
+							<img src="img/review3.png" alt="">
+							<div class="review_text">
+								<span class="name">Николас, 61 год</span>
+								<span class="review_item_text">
+									Я упал с велосипеда и повредил колено. Оно все время болело и отекало. Ходить было тяжело. 
+									Долго хромал. Соседка мне рассказала про Artrolux +. Мне понравилось, что он состоит только из 
+									натуральных компонентов. Я принимаю его пару недель. Боль и отеки прошли. Перестал хромать.
+								</span>
+							</div>
+						</div>
+						<span class="h4 col-lg-8">Закажите со скидкой 50%</span>
+						<a href="#order" class="button reviews_btn">ЗАКАЗАТЬ</a>
+					</div>
+				</div>
+			</section>
+			<section class="how_use">
+				<div class="container-fluid">
+					<div class="row justify-content-lg-center">
+						<span class="h3 col-12">Как принимать Artrolux +?</span>
+						<div class="col-lg-3 col-sm-4 col-12 how_use_item how_use_item1">
+							<img src="img/how_use_icon1.png" alt="">
+							<span>1 капсула<br> 3 раза в день</span>
+						</div>
+						<div class="col-lg-3 col-sm-4 col-12 how_use_item how_use_item2">
+							<img src="img/how_use_icon2.png" alt="">
+							<span>Во время еды,  запивая водой</span>
+						</div>
+						<div class="col-lg-3 col-sm-4 col-12 how_use_item how_use_item3">
+							<img src="img/how_use_icon3.png" alt="">
+							<span>Принимать  непрерывным курсом</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="delivery">
+				<div id="delivery"></div>
+				<div class="container-fluid">
+					<div class="row">
+						<span class="h3 col-12">Как оформить заказ и получить Artrolux + ?</span>
+						<div class="col-sm-3 col-6 delivery_item delivery_item1">
+							<img src="img/how_get_icon1.png" alt="">
+							<span class="text">Вы оставляете заявку<br>на нашем сайте</span>
+						</div>
+						<div class="col-sm-3 col-6 delivery_item delivery_item2">
+							<img src="img/how_get_icon2.png" alt="">
+							<span class="text">Наш специалист связывается  с вами</span>
+						</div>
+						<div class="col-sm-3 col-6 delivery_item delivery_item3">
+							<img src="img/how_get_icon3.png" alt="">
+							<span class="text">Мы отправляем<br>ваш заказ</span>
+						</div>
+						<div class="col-sm-3 col-6 delivery_item delivery_item4">
+							<img src="img/how_get_icon4.png" alt="">
+							<span class="text">Вы оплачиваете заказ только после получения</span>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="order">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-7 col-sm-6 col-12 product_img">
+							<div class="short_inf_item short_inf_item1">
+								<img src="img/footer_icon1.png" alt="">
+								<img class="footer_icon" src="img/short_info1.png" alt="">
+								<span>Избавляет от боли и отеков в суставах</span>
+							</div>
+							<div class="short_inf_item short_inf_item2">
+								<img src="img/footer_icon2.png" alt="">
+								<img class="footer_icon" src="img/short_info2.png" alt="">
+								<span>Восстанавливает двигательную активность</span>
+							</div>
+							<div class="short_inf_item short_inf_item3">
+								<img src="img/footer_icon3.png" alt="">
+								<img class="footer_icon" src="img/short_info3.png" alt="">
+								<span>Укрепляет суставы, кости и мышцы</span>
+							</div>
+							<img class="product" src="img/tovar_top.png" alt="">
+							<img class="for_768 product" src="img/tovar768.png" alt="">
+						</div>
+						<div class="col-lg-5 col-sm-6 col-12 order_contant">
+							<h1 class="h1">Artrolux +</h1>
+							<span class="h2">
+								Восстановление суставов  Первое средство с пудрой жемчуга 
+							</span>
+							<div class="order_item">
+								<div class="sale">
+									<div class="sale_text">
+										<span>Скидка -50 %</span>
+										<span class="finish">заканчивается  через</span>
+									</div>
+									<div class="countdown-container"></div>
+								</div>
+								<div class="price">
+									<div class="old_price">
+										<span class="wv_old-price">78</span>
+										<span class="wv_currency">&euro;</span>
+									</div>
+									<div class="new_price">
+										<span class="wv_new-price">39</span>
+										<span class="wv_currency">&euro;</span>
+									</div>
+								</div>
+								<form action="order.php" method="POST" class="wv_order-form">
+									<span>Страна</span>
+									<div class="select_holder">
+										<select id="id_country" name="id_country" class="country_select">
+											<option value="at">Austria</option>
+											<option value="it">Italy</option>
+											<option value="es">Spain</option>
+											<option value="fr">France</option>
+											<option value="lv">Latvia</option>
+											<option value="ee">Estonia</option>
+											<option value="lt">Lithuania</option>
+											<option value="de">Germany</option>
+											<option value="pl">Poland</option>
+											<option value="hu">Hungary</option>
+											<option value="bg">Bulgaria</option>
+										</select> 
+									</div>
+									<span>Имя</span>
+									<input name="name" type="text" class="wv_name" required>
+									<span>Телефон</span>
+									<input name="phone" type="text" class="wv_phone" required>
+									<input name="ym" type="hidden" class="" value="default">
+									<input name="utm_source" type="hidden" class="">
+									<input name="utm_medium" type="hidden" class="">
+									<input name="utm_campaign" type="hidden" class="">
+									<input name="utm_content" type="hidden" class="">
+									<input name="utm_term" type="hidden" class="">
+									<input name="referer" type="hidden" class="" value="default">
+									<input name="guid" type="hidden" class="">
+									<input name="first_guid" type="hidden" class="">
+									<input name="landing_id" type="hidden" class="">
+									<input name="prelanding_id" type="hidden" class="">
+									<input name="offer_id" type="hidden" class="">
+									<input name="url" type="hidden" class="">
+									<button class="button form_btn">ЗАКАЗАТЬ</button>
+									<span class="police">
+										Осталось N упаковок <img src="img/shild_icon.png" alt="">
+										<img class="for_320" src="img/shild_icon_w.png" alt="">Ваши данные под защитой
+									</span>
+								</form>
+							</div>
+						</div>
+						<div class="short_inf col-12">
+							<div class="row">
+								<div class="col-sm-4 col-12 short_inf_item short_inf_item1">
+									<img src="img/short_info1.png" alt="">
+									<span>Избавляет от боли и отеков в суставах</span>
+								</div>
+								<div class="col-sm-4 col-12 short_inf_item short_inf_item2">
+									<img src="img/short_info2.png" alt="">
+									<span>Восстанавливает двигательную активность</span>
+								</div>
+								<div class="col-sm-4 col-12 short_inf_item short_inf_item3">
+									<img src="img/short_info3.png" alt="">
+									<span>Укрепляет суставы, кости и мышцы</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/jquery-3.2.0.min.js"></script>
+ 	<script src="js/bootstrap.min.js"></script>
+ 	<script src="js/jquery.countdown.min.js"></script>
+ 	<script src="js/script.js"></script>
+ 	<noscript><img src="//tracker.webvork.ru/pixel.php?offer_id=1&landing_id=1" alt=""></noscript>
+ 	<script src="js/webvork.js"></script>
+</body>
+</html>
